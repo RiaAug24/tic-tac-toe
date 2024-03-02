@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  color: rgb(44, 45, 43);
+  background-color: rgb(247, 223, 251);
+}
+
+#main-header {
+  font-family: 'Madimi', sans-serif;
+  background: linear-gradient(45deg, rgb(145, 4, 219), rgb(221, 144, 241));
+  color: white;
+  padding: 2rem 5%;
+  text-align: center;
+}
+
