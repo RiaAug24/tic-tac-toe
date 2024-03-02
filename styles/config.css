@@ -1,0 +1,31 @@
+#config-overlay {
+  text-align: center;
+}
+
+#config-overlay h2 {
+  font-size: 2rem;
+  margin-left: 8px;
+}
+
+.form-control {
+  margin: 0.5em;
+}
+
+.form-control label {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-control input {
+  font: inherit;
+  border: 1px solid rgb(203, 200, 206);
+  padding: 0.35rem;
+  width: 45%;
+}
+
+.form-control input:focus {
+  outline: 1px solid transparent;
+  background-color: rgb(237, 209, 243);
+}

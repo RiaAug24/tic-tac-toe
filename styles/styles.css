@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  color: rgb(44, 45, 43);
+  background-color: rgb(247, 223, 251);
+}
+
+#main-header {
+  background: linear-gradient(75deg, rgb(145, 4, 219), rgb(221, 144, 241));
+  color: white;
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+#header-title {
+  font-family: "Madimi", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  text-shadow: 2px 1px 2px rgb(217, 144, 231);
+}
+
+.header-info {
+  color: rgb(235, 229, 235);
+  font-size: 1.25em;
+}
+
+.btn {
+  font-family: "Madimi", sans-serif;
+  padding: 0.5rem 1.25rem;
+  background-color: rgb(168, 40, 237);
+  border: 1px solid rgb(168, 40, 237);
+  cursor: pointer;
+  color: white;
+  border-radius: 1rem;
+}
+
+.btn-alt {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgb(168, 40, 237);
+}
+
+.btn:hover {
+  background-color: rgb(145, 4, 219);
+  border-color: rgb(168, 40, 237);
+  transition: background-color 0.5s ease-out, border-color 0.5s ease-in;
+}
+
+.btn-alt:hover {
+  color: rgb(244, 240, 245);
+  background-color: rgba(209, 97, 240, 0.75);
+  border: 1px solid rgb(224, 191, 244);
+}
+
+.edit-btn:hover {
+  background-color: rgb(150, 66, 229);
+  border-color: rgb(177, 110, 213);
+}
