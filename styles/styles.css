@@ -7,18 +7,18 @@ body {
 }
 
 #main-header {
-  background: linear-gradient(75deg, rgb(145, 4, 219), rgb(221, 144, 241));
-  color: white;
+  background: linear-gradient(110deg, rgb(145, 4, 219), rgb(172, 67, 220), rgb(168, 51, 215));
   padding: 2rem 5%;
   text-align: center;
 }
 
 #header-title {
   font-family: "Madimi", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 1.25px;
+  color: rgb(243, 239, 245);
   text-transform: uppercase;
-  font-size: 2.5em;
-  text-shadow: 2px 1px 2px rgb(217, 144, 231);
+  font-size: 2.75rem;
+  text-shadow: 1px 1px 1.25px rgb(40, 39, 40);
 }
 
 .header-info {
@@ -27,6 +27,7 @@ body {
 }
 
 .btn {
+  font: inherit;
   font-family: "Madimi", sans-serif;
   padding: 0.5rem 1.25rem;
   background-color: rgb(168, 40, 237);
@@ -45,7 +46,7 @@ body {
 .btn:hover {
   background-color: rgb(145, 4, 219);
   border-color: rgb(168, 40, 237);
-  transition: background-color 0.5s ease-out, border-color 0.5s ease-in;
+  transition: background-color 0.25s ease-out, border-color 0.25s ease-in;
 }
 
 .btn-alt:hover {

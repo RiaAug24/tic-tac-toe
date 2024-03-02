@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/overlays.css" />
     <link rel="stylesheet" href="styles/config.css" />
+    <link rel="stylesheet" href="styles/game.css" />
   </head>
   <body>
     <div id="backdrop"></div>
     <header id="main-header">
-      <h1 id="header-title">Play Tic-Tac-Toe!</h1>
+      <h1 id="header-title">Play Tic-Tac-Toe</h1>
       <p class="header-info">
-        Built with HTML, CSS & JavaScript - of-course - Made with lots of
+        Built with HTML, CSS & JavaScript and - of course - Made with lots of
         &#10084;
       </p>
     </header>
@@ -42,30 +43,32 @@
             <article>
               <h2>Player 1</h2>
               <h3>Player Name</h3>
-              <p>X</p>
-              <button class="btn btn-alt edit-btn">Edit</button>
+              <p class="ingame-symbols">X</p>
+              <button class="btn btn-alt edit-btn" id="edit-btn-1">Edit</button>
             </article>
           </li>
           <li>
             <article>
               <h2>Player 2</h2>
               <h3>Player Name</h3>
-              <p>O</p>
-              <button class="btn btn-alt edit-btn">Edit</button>
+              <p class="ingame-symbols">O</p>
+              <button class="btn btn-alt edit-btn" id="edit-btn-2">Edit</button>
             </article>
           </li>
+         
         </ol>
         <button class="btn">Start New Game</button>
+       
       </section>
 
-      <section id="active-state">
-        <article>
+      <section id="active-game">
+        <article id="game-over">
           <h3>You Won, <span id="winner-name">PLAYER NAME</span>!</h3>
           <p>Click "Start New Game" above, to start a new game!</p>
         </article>
 
         <p>It's your turn <span id="active-player-name">PLAYER NAME</span>!</p>
-        <ol>
+        <ol id="game-board">
           <li></li>
           <li></li>
           <li></li>
