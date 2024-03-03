@@ -19,10 +19,6 @@ function savePlayerConfig(e) {
   e.preventDefault();
   const formData = new FormData(e.target);
   const enteredPlayerName = formData.get("playername").trim();
-  if (enteredPlayerName) {
-    formElement.firstElementChild.classList.add("checked");
-    errorOutputElement.textContent = "";
-  }
 
   if (!enteredPlayerName) {
     formElement.firstElementChild.classList.add("error");

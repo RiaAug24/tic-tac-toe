@@ -1,13 +1,13 @@
 .modal {
-    position: fixed;
-    top: 20%;
-    left: 5%;
-    width: 90%;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0 , 0.2);
-    display: none;
+  position: fixed;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: none;
 }
 
 #backdrop {
@@ -21,9 +21,8 @@
 }
 
 @media screen and (min-width: 812px) {
-  .modal {  
-    left: calc(50% - 20rem);
-    width: 744px;
-  } 
-
+  .modal {
+    left: calc(50% - 25rem);
+    width: 45rem;
+  }
 }
