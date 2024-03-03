@@ -20,11 +20,11 @@
     <header id="main-header">
       <h1 id="header-title">Play Tic-Tac-Toe</h1>
       <p class="header-info">
-        Built with HTML, CSS & JavaScript and - of course - Made with lots of
+        Built with HTML , CSS & JavaScript and - of course - Made with lots of
         &#10084;
       </p>
     </header>
-    
+
     <main>
       <aside class="modal" id="config-overlay">
         <h2>Choose your name</h2>
@@ -33,32 +33,51 @@
             <label for="player-name">Player Name</label>
             <input type="text" name="playername" id="player-name" />
           </div>
-          <button class="btn btn-alt" id="cancel-config-btn" type="button">Cancel</button>
-          <button class="btn submit-btn" id="submit-config-btn"type="submit">Confirm</button>
+          <p class="config-error"></p>
+          <button class="btn btn-alt" id="cancel-config-btn" type="reset">
+            Cancel
+          </button>
+          <button class="btn submit-btn" id="submit-config-btn" type="submit">
+            Confirm
+          </button>
         </form>
       </aside>
       <section id="game-configuration">
         <ol>
           <li>
-            <article>
+            <article id="player-1-data">
               <h2>Player 1</h2>
-              <h3>Player Name<i class="bi bi-code-square"></i></h3>
+              <h3>Player Name</h3>
               <p class="ingame-symbols">X</p>
-              <button class="btn btn-alt edit-btn" id="edit-btn-1">Edit</button>
+              <button
+                class="btn btn-alt edit-btn"
+                id="edit-btn-1"
+                data-playerid="1"
+              >
+                Edit
+              </button>
             </article>
           </li>
           <li>
-            <article>
+            <article id="player-2-data">
               <h2>Player 2</h2>
               <h3>Player Name</h3>
               <p class="ingame-symbols">O</p>
-              <button class="btn btn-alt edit-btn" id="edit-btn-2">Edit</button>
+              <button
+                class="btn btn-alt edit-btn"
+                id="edit-btn-2"
+                data-playerid="2"
+              >
+                Edit
+              </button>
             </article>
           </li>
         </ol>
-        <button class="btn">Start New Game</button>
+        <button class="btn" id="start-game-btn">Start New Game</button>
       </section>
-
+      <p class="config-error p-name-err hidden">
+        Please set the names of both the players!
+      </p>
       <section id="active-game">
         <article id="game-over">
           <h3>You Won, <span id="winner-name">PLAYER NAME</span>!</h3>
@@ -82,7 +101,7 @@
       </section>
     </main>
   </body>
+  <script src="JS/game.js"></script>
   <script src="JS/config.js"></script>
   <script src="JS/app.js"></script>
-  <script src="JS/game.js"></script>
 </html>

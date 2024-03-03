@@ -40,19 +40,19 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 #game-configuration li {
   margin: 2rem;
-  padding: 1rem;
+  padding: 0.75rem;
   width: 25%;
   background-color: rgb(236, 196, 244);
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0 , 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-#game-configuration h2{
+#game-configuration h2 {
   font-size: 1.25rem;
   margin: 0.5rem 0;
 }
@@ -68,4 +68,32 @@
   font-weight: bold;
   color: (46, 44, 39);
   margin: 0 auto 1.25rem;
+}
+
+.error input,
+.error input:focus {
+  border-color: rgb(189, 61, 44);
+  background-color: rgb(243, 161, 155);
+}
+
+.checked input,
+.checked input:focus {
+  border: 1px solid rgb(203, 200, 206);
+  outline: 1px solid transparent;
+  background-color: rgb(237, 209, 243);
+}
+
+.config-error {
+  color: rgb(206, 56, 46);
+  text-shadow: 1px 0.85px 0.9px rgb(42, 42, 44);
+  font-weight: bold"
+}
+
+.config-error.p-name-err {
+  text-align: center;
+  font-size: 36px;
+}
+
+.config-error.p-name-err.hidden {
+  display: none;
 }
