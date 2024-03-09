@@ -3,9 +3,10 @@ const gameData = [
   [0, 0, 0],
   [0, 0, 0],
 ];
-
+let gameIsOver = false;
 let editedPlayer = 0;
 let activePlayer = 0;
+let currentRound = 1;
 const players = [
   {
     name: "",
@@ -27,16 +28,18 @@ const gameBoardLayout = document.getElementById("active-game");
 const cancelConfigBtn = document.getElementById("cancel-config-btn");
 const formElement = document.querySelector("form");
 const errorBoxMsg = document.querySelector(".config-error.p-board-err");
-
+const gameOverMsg = document.getElementById("game-over");
 
 const errorOutputElement = document.querySelector(".config-error");
 const errorPlayerNamesOutput = document.querySelector(
   ".config-error.p-name-err"
 );
 
+
+
 const activePlayerName = document.getElementById("active-player-name");
 const gameBoardElement = document.getElementById("game-board");
-// const gameFieldElements = document.querySelectorAll('#game-board li');
+
 
 editBtn_player1.addEventListener("click", openPlayerConfig);
 editBtn_player2.addEventListener("click", openPlayerConfig);
